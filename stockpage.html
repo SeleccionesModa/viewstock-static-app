@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stockpagestyles.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <title>Stock Page</title>
+</head>
+
+<body>
+    <h1>Pàgina per veure l'stock</h1>
+    <h3>Introduir l'article i el color separats per un espai</h3>
+    <i class="gg-search"></i><input type="text" id="myInput" placeholder="M3600 T55"
+        title="Type in a name">
+
+    <div id="infosearch"></div>
+    <div id="table-container">
+
+        <table id="apidatable">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Color</th>
+                    <th>Talla</th>
+                    <th>Estoc</th>
+                    <th>EAN</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <script src="stock.js"></script>
+</body>
+
+</html>
