@@ -29,7 +29,7 @@ function validate(e) {
     console.log(words[1]);
 
     //base URL
-    const apiUrl = new URL('http://server01:85/api/Producto/GetStockProducto');
+    const apiUrl = new URL('http://2.136.89.187:85/api/Producto/GetStockProducto');
     //append params to URL
     apiUrl.searchParams.append('login', username);
     apiUrl.searchParams.append('producto', words[0].toUpperCase());
