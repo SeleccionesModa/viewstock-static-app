@@ -3,8 +3,10 @@ const username = localStorage.getItem('user');
 const searchbar = document.getElementById("myInput");
 const infomessage = document.getElementById('infosearch');
 
+localStorage.clear()
+
 if (!username) {
-    window.location.href = 'index.html';
+    window.location.href = '../index.html';
 }
 
 searchbar.addEventListener("keydown", function (e) {
@@ -59,7 +61,7 @@ function validate(e) {
         })
         .catch(error => {
             console.error('Error:', error);
-            //window.location.href = 'index.html'; 
+            //window.location.href = '../index.html'; 
             infomessage.style.display = 'block'
             infomessage.textContent = error
         });

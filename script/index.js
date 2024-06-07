@@ -55,7 +55,7 @@ loginForm.addEventListener('submit', async (event) => {
             //save the token 
             localStorage.setItem('myAppToken', token)
             // Redirect to another page (e.g., dashboard.html)
-            window.location.href = 'stockpage.html'; 
+            window.location.href = '/stock/stockpage.html'; 
             
         } else {
             // Show error message
