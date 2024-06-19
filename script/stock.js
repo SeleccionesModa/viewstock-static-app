@@ -12,12 +12,12 @@ if (!username) {
 searchbar.addEventListener("keydown", function (e) {
     if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
         infomessage.style.display = 'block'
-        infomessage.textContent = 'Buscant stock...'
+        infomessage.textContent = 'Buscando stock...'
         try {
             validate(e);
         }
         catch {
-            infomessage.textContent = 'Format Invàlid'
+            infomessage.textContent = 'Formato incorrecto'
         }
     }
 });
@@ -55,7 +55,7 @@ function validate(e) {
             // Process the retrieved data as needed
             if (data.length == 0) {
                 infomessage.style.display = 'block'
-                infomessage.textContent = 'No trobat'
+                infomessage.textContent = 'No encontrado'
             }
             showstock(data)
         })
