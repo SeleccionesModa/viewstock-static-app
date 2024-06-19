@@ -20,7 +20,7 @@ loginForm.addEventListener('submit', async (event) => {
         return;
     }
 
-    const apiUrl = 'http://server01:85/api/Account/GetToken'; // SHOULD Use HTTPS
+    const apiUrl = 'http://2.136.89.187:85/api/Account/GetToken'; // SHOULD Use HTTPS
     const headers = {
         'accept': '*/*',
         'Authorization': 'Bearer', // No actual token here yet
